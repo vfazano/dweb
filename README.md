@@ -1,11 +1,6 @@
 # Desenvolvimento Web 1
 
-## Plano de Ensino – Disciplina: Desenvolvimento Web (HTML, CSS e JavaScript)
-
-**Carga horária:** 20 aulas (1 por semana)
-**Avaliação:** 4 atividades avaliativas ao longo do semestre
-**Objetivo geral:** Capacitar o aluno a desenvolver páginas e aplicações Web com HTML, CSS e JavaScript e, ao final, compreender os princípios de aplicações Web, protocolos e arquitetura cliente/servidor.
-
+## Plano de Ensino – Disciplina: Desenvolvimento Web (HTML, CSS e JavaScript).
 ---
 
 ## Estrutura de Avaliação (4 Entregas)
