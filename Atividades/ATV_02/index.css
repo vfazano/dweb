@@ -1,77 +1,279 @@
-*{ 
-     margin:0;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+     --primaria: #4f46e5;
+     --secundaria: #ec4899;
+     --terciaria: #b9528f;
+     --neutra: #7b719d;
+     --bg-hero: #FAF4FF;
+     --bg-badge: #FFC1D7;
+     --bg-atelier:  #F5EEFF;
+     --badge-text: #8E0055;
+     --spacer: #B10D6A;
+     --texto-principal: #33294F;
+     --texto-secundario: #60567F;
+}
+* {
+     margin: 0;
 }
 
-.header{
+body{
+     font-family: "Inter";
+     min-width: 280px;
+     color: var(--texto-principal);
+}
+h1, h2, h3, h4{
+     font-family: "Plus Jakarta Sans"
+}
+
+p{
+     font-size: 2.25vh;
+}
+h1{
+     font-size: 6vh;
+     font-weight: 800;
+}
+
+header{
      height: 10vh;
+     color: var(--primaria);
+     font-size: 1.3vh;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     
+}
+
+.menuIcon{
+     width: 3.5vh;
+}
+
+.hero{
+     background-color: var(--bg-hero);
+     padding: 1vh 6vw;
+     display: flex;
+     flex-direction: column;
+     gap: 2vh;
+}
+
+.heroFirst, .heroButtons{
+     display: flex;
+     flex-direction: column;
+     gap: 2vh;
+     padding-top: 8vh;
+}
+
+.badge{
+     padding: 0.5vh 2vh;
+     background-color: var(--bg-badge);
+     color: var(--badge-text);
+     width: fit-content;
+     font-size: 1.5vh;
+     border-radius: 4vh;
+     text-transform: uppercase;
+}
+
+.hero h1 strong{
+     font-style: italic;
+     color: var(--primaria)
+}
+
+.mainBtn{
+     background: #4F47E2;
+     background: linear-gradient(90deg, rgba(79, 71, 226, 1) 0%, rgba(109, 103, 238, 1) 50%, rgba(145, 143, 253, 1) 100%);
+     color: white;
+     padding: 2vh;
+     border-radius: 4vh;
+     border: none;
+     font-weight: 600;
+     font-size: 2vh;
+}
+.outlineBtn{
+     color: #4F47E2;
+     padding: 2vh;
+     border-radius: 4vh;
+     background-color: transparent;
+     border: 1px solid #DED8E8;
+     font-weight: 600;
+     font-size: 2vh;
+}
+
+.heroImages{
+     padding-top: 5vh;
+}
+
+.heroImages img{
+     border-radius: 2vh;
+     width: 88vw;
+     min-width: 280px;
+}
+
+.img1:hover{
+     transform: rotate(2deg);
+     transition: ease 500ms;
+}
+
+.heroImages .card{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: left;
+     width: 40vw;
+     background-color: white;
+     padding: 2vh;
+     gap: 1vh;
+     border-radius: 2vh;
+     transform: translate(-25px, -90px);
+     box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+.heroImages .card h4{
+     color: var(--primaria);
+     font-style: italic;
+}
+
+.heroImages .card p{
+     color: var(--texto-principal);
+     font-size: 1.5vh;
+     font-weight: 300;
+     width: 40vw;
+     font-style: normal;
+}
+
+.atelier{
+     background-color: var(--bg-atelier);
+     padding: 4vh 6vw;
+}
+.atelier header{
+     display: flex;
+     flex-direction: column;
+     padding: 4vh 0vw;
+     color: var(--texto-principal);
+     h2{
+          font-size: 4vh;
+          font-weight: 700;
+     }
+     span{
+          background-color: #B10D6A;
+          width: 25vw;
+          height: 0.5vh;
+          border-radius: 0.5vh;
+     }
+}
+
+.divider{
+     width: 50vw;
+}
+
+.cardSection{
+     display: flex;
+     flex-direction: column;
+     gap: 4vh;
+}
+
+.card{
+     background-color: white;
+     padding: 4vh 6vw;
+     border-radius: 2vh;
+     display: flex;
+     flex-direction: column;
+     gap: 4vh;
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+.card1Logo{
+     background-color: #ECECFC;
+     border-radius: 4vw;
+     width: fit-content;
+     padding: 1.5vh 2.7vw;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.card h3{
+     font-size: 3.0vh;
+}
+
+.card1Logo svg{
+     width: 8vw;
+}
+
+.card2Logo svg{
+     width: 8vw;
+     scale: 70%;
+}
+.card3Logo svg{
+     width: 8vw;
+}
+
+.card2Logo{
+     background-color: #F5EBF0;
+     border-radius: 4vw;
+     width: fit-content;
+     padding: 1.5vh 2.7vw;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.card3Logo{
+     background-color: #F8E8F0;
+     border-radius: 4vw;
+     width: fit-content;
+     padding: 1.5vh 2.7vw;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.card p{
+     color: var(--texto-secundario)     ;
+}
+.featuredDrops{
+     background-color: #FAF4FF;
+     padding: 6vh 6vw;
+     height: 100vh;
+}
+.featuredDropsHeader h1{
+     font-size: 4.5vh;
+}
+.featuredDropsHeader span{
+     padding: 2vh 0vw 6vh 0vw;
      display: flex;
      justify-content: space-between;
-     align-items: center;
-     padding-left: 10vw;
-     padding-right: 10vw;
-
+     a{
+          color: #4f46e5;
+          font-size: 2vh;
+          text-decoration: underline;
+          text-underline-offset: 1vh;
+          font-weight: bold;
+     }
 }
-
-.header ul{
+.item{
      display: flex;
-     gap: 2vw;
-}
-
-.header a{
-     text-decoration: none;
-     font-weight: 500;
-}
-
-.body1, .body2{
-     display: flex;
+     flex-direction: column;
      justify-content: center;
-     align-items: center;
-     gap: 5vw;
-     height: 100vh;
-     width: 100%;
+     .itemDescription{
+          h4{
+               color: var(--badge-text);
+               text-transform: uppercase ;
+          }
+     }
 }
+.item img{
+     max-width: 88vw;
+     border-radius: 4vw;
+} 
 
-.body1{
-     background-color: rgba(255, 255, 255, 0.881);
-}
-.body2{
-     background-color: rgba(228, 234, 255, 0.433);
-}
 
 
-.aside{
-     background-color: green;
-     width: 10vw;
-     height: 100%;
-}
-.footer{
-     background-color: black;
-     height: 15vh;
-     color: white;
-     display: flex;
-     padding-left: 10vw;
-     padding-right: 10vw;
-     align-items: center ;
-}
 
-.cardP , .cardM , .cardG{
-     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-     background-color: white;
-     border-radius: 20px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-}
-.cardP{
-     width: 15vw;
-     height: 20vh;
-}
 
-.cardM{
-     width: 25vw;
-     height: 30vh;
-}
-.cardG{
-     width: 35vw;
-     height: 40vh;
+
+
+
+
+
+@media (min-width: 600px) {
+     
 }
